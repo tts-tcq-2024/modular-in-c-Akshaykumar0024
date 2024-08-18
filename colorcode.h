@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <assert.h> 
 
-const int MAX_COLORPAIR_NAME_CHARS = 16;
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
@@ -11,6 +10,8 @@ typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
 } ColorPair;
+
+const int MAX_COLORPAIR_NAME_CHARS = 16;
 
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
